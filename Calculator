@@ -1,0 +1,50 @@
+def get_number(prompt):
+   
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+def main():
+    print("-------- Simple Calculator --------")
+    
+    while True:
+        num1 = get_number("Enter first number: ")
+        num2 = get_number("Enter second number: ")
+        
+        while True:
+            print("Enter operator :( + - * /)")
+            op = input().strip()
+            
+            match op:
+                case '+':
+                    result = num1 + num2
+                    break
+                case '-':
+                    result = num1 - num2
+                    break
+                case '*':
+                    result = num1 * num2
+                    break
+                case '/':
+                    if num2 == 0:
+                        print("Division by zero is not allowed.")
+                        continue 
+                    result = num1 / num2
+                    break
+                case _:
+                    print("Choose from the above operator.\n")
+
+        print(f"The required answer is : {result}")
+        
+        print("\nPress 1 for calculation otherwise press enter")
+        choice = input().strip()
+        if choice == '1':
+            print("\n ---------Perform another operation------------\n")
+        else:
+            print("See Uhh!")
+            break
+
+if __name__ == "__main__":
+    main()
