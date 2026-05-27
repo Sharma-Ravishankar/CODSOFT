@@ -26,3 +26,7 @@ These projects helped me gain practical experience in Python programming and str
 ## 
 Ravishankar Kumar Sharma  
 Python Programming Intern at CodSoft
+
+📧 Email: sharmaravishankar100@gmail.com  
+🔗 GitHub: Sharma-Ravishankar  
+🔗 LinkedIn: https://www.linkedin.com/in/ravisharma04/
